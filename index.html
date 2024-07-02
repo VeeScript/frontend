@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tech Goals</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Times New Roman, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  color: brown;
+  padding: 15px;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  border-radius: 10px;
+  border: 2px solid black;
+  justify-content: space-between;
+  min-width: 500px;
+  box-align:stretch;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #CD7F32;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #964B00 ;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #F5F5DC;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: FCEED1;
+  padding: 20px;
+}
+.main h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.main h5  {
+    font-size: large;
+}
+/* Fake image, just for this example */
+.Profile img {
+    width: auto;
+    height: auto;
+    align-self: center;
+  padding: 20px;
+}
+.main ul {
+    list-style-type: square;
+    padding: 20px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:auto
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 data-testid="pageTitle">My Goals for the next 2 years in the Tech Field</h1>
+  <p>An HNG stage Project.</p>
+</div>
+
+<div class="navbar">
+   <ul>
+      <li><a href="https://hng.tech/learn" data-testid="hngLink">HNG Learn</a></li>
+      <li><a href="https://keyword.dog" data-testid="keywordLink">Keyword</a></li>
+      <li><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></li>
+     </ul>
+ 
+   
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About my Project</h2>
+    <div class="Profile" style="height:auto;">
+        <img  src="hng.png" ></div>
+    <p>My Project  is a stage 1 task in the Frontend web development track of HNG 11 internship program.<br> It is a prerequisite for promotion to the next stage. <p>
+    <div class="Profile" style="height: auto;">
+        <img src="target.jpg"></div>
+        <p>HNG Internship is a fast-paced bootcamp for learning digital skills. It's focused on advanced learners and those with some pre-knowledge, and it gets people into shape for job offers. In the HNG bootcamp, we work in teams to build apps and solve problems.</p>
+    
+  </div>
+  <div class="main">
+    <h2>About Me</h2>
+    <h5>Slack Name: <span data-testid="slackDisplayName">VeeScript</span></h5>
+    <p>Slack Email: <span data-testid="slackEmail">kennygheey@gmail.com</span></p>
+    <div class="Profile" style="height:auto">
+        <img  src="T07466B189M-U079ZANL087-24dc0ccfe173-512.png" alt="Slack Profile Picture" data-testid="slackProfilePicture"></div>
+    
+    <p>In the competitive city of Lagos which boasts of creativity, Alex embarked on a journey into frontend development. With curiosity and determination, Alex began learning HTML, crafting simple web pages that evolved into visually appealing layouts with CSS.
+
+        Excitement grew as Alex mastered JavaScript, adding interactivity and dynamism to websites. <br>From manipulating elements on the page to creating interactive features, each new skill opened doors to greater possibilities.
+        
+        Through challenges and late-night coding sessions, Alex honed skills in frameworks like React and Vue, building powerful applications that rivaled desktop software.
+        
+        With each project completed, from personal portfolios to collaborative ventures, Alex's confidence and expertise in frontend development flourished, marking a journey of growth, creativity, and a relentless pursuit of mastery.</p>
+    <br>
+    <p>I am Alex. <br>Well, I believe I will be.....</p>
+    <br>
+    <p>Hi, My name is Kehinde Ebunola, and this is my first frontend personal project. <br>My goal is Alex's journey. I want to feel the excitememt he felt and be able to manipulate elements like he did.<br> I want to feel the mastery beneath my fingertips and the p;easure of being a sought out creative. </p>
+    <br>
+    <div class="Profile" style="height:auto">
+        <img  src="goals.jpg"><div>
+    <p>That's why I've set some aims to help achieve my goals:
+    <ul>
+        <li>Learn the concept of Frontend Technologies and their frameworks</li>
+        <li>Contribute to open-source projects.</li>
+        <li>Build a personal portfolio website.</li>
+        <li>Improve problem-solving skills by practicing coding challenges and joining related internships</li>
+        <li>Attend tech conferences and meetups.</li>
+    So, when you see this at the time below, just know I'm a step closer to my goal.</p>
+    <section class="time-info">
+        <p>Current Time in UTC: <span data-testid="currentTimeUTC" id="currentTimeUTC">Loading...</span></p>
+        <p>Current Day of the Week: <span data-testid="currentDay" id="currentDay">Loading...</span></p>
+        <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            function updateTimeAndDay() {
+                const currentTimeUTC = document.getElementById('currentTimeUTC');
+                const currentDay = document.getElementById('currentDay');
+        
+                const now = new Date();
+                const utcHours = now.getUTCHours().toString().padStart(2, '0');
+                const utcMinutes = now.getUTCMinutes().toString().padStart(2, '0');
+                const utcSeconds = now.getUTCSeconds().toString().padStart(2, '0');
+        
+                currentTimeUTC.textContent = `${utcHours}:${utcMinutes}:${utcSeconds} UTC`;
+        
+                const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                currentDay.textContent = daysOfWeek[now.getUTCDay()];
+            }
+        
+            // Initial update
+            updateTimeAndDay();
+        
+            // Update every second
+            setInterval(updateTimeAndDay, 1000);
+        });
+    </script>
+        
+    </section>
+    </div>
+</div>
+
+<div class="footer">
+  <a href="#" class="back-to-top">Back to Top</a>
+</div>
+
+</body>
+</html>
